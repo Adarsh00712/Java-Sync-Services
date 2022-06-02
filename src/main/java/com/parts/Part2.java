@@ -12,7 +12,7 @@ import com.csvtodatabase.CSVConsume;  //for importing the CSVConsume java class 
 
              //  ScheduledExecutorService extends to ExecutorService that will run after given delay
 
-             //We use newScheduledThreadPool() method of Executors class for Schedule command to run after 10 minutes
+             //We use newScheduledThreadPool() method of Executors class for Schedule command to run after 2 minutes
 
              ScheduledExecutorService scheduledExecutorService= Executors.newScheduledThreadPool(100);
 
