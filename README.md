@@ -50,7 +50,8 @@ Steps to install Intellij IDEA plugin from IDE:
 * Adding dependecies of mysql-connector and opencsv in POM.XML file
 
 ```bash
- <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+  <dependencies>
+        <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
 
         <dependency>
             <groupId>mysql</groupId>
@@ -58,7 +59,9 @@ Steps to install Intellij IDEA plugin from IDE:
             <version>8.0.29</version>
 
         </dependency>
-                <dependency>
+
+        <!-- https://mavenlibs.com/maven/dependency/com.opencsv/opencsv -->
+        <dependency>
             <groupId>com.opencsv</groupId>
             <artifactId>opencsv</artifactId>
             <version>5.6</version>
