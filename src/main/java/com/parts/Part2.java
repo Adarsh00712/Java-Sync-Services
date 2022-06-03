@@ -121,9 +121,7 @@ class MyThreadRunnable implements Runnable {   //Using Runnable Interface
      public class Part2{
          public static void main(String[] args) {
 
-             /*MyThreadRunnable bullet =new MyThreadRunnable(); //making object of CSVConsume class for using it here
-             Thread gun =new Thread(bullet); //Giving Runnable to Thread
-             gun.start();*/
+     
 
              //  ScheduledExecutorService extends to ExecutorService that will run after given delay
 
@@ -134,7 +132,7 @@ class MyThreadRunnable implements Runnable {   //Using Runnable Interface
 
 
              //scheduleAtFixedRate() method of timer class is used to schedule the given task again and again
-             scheduledExecutorService.scheduleAtFixedRate(myThreadRunnable,5,2,TimeUnit.SECONDS);
+             scheduledExecutorService.scheduleAtFixedRate(myThreadRunnable,5,2,TimeUnit.Minutes);
 
              System.out.println("Our program will keep updating after every 2 Minutes"); //message
          }
