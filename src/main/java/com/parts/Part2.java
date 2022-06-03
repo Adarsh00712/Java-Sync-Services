@@ -21,6 +21,6 @@ import com.csvtodatabase.CSVConsume;  //for importing the CSVConsume java class 
              //scheduleAtFixedRate() method of timer class is used to schedule the given task again and again
              scheduledExecutorService.scheduleAtFixedRate((Runnable) csvConsume,0,2,TimeUnit.MINUTES);
 
-             System.out.println("Our program will keep updating after every 10 minutes"); //message
+             System.out.println("Our program will keep updating after every 2 minutes"); //message
          }
      }
