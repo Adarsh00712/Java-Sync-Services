@@ -132,7 +132,7 @@ class MyThreadRunnable implements Runnable {   //Using Runnable Interface
 
 
              //scheduleAtFixedRate() method of timer class is used to schedule the given task again and again
-             scheduledExecutorService.scheduleAtFixedRate(myThreadRunnable,5,2,TimeUnit.Minutes);
+             scheduledExecutorService.scheduleAtFixedRate(myThreadRunnable,0,2,TimeUnit.Minutes);
 
              System.out.println("Our program will keep updating after every 2 Minutes"); //message
          }
